@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search button</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Google Search</h1>
-        <p>Search with <b>action</b> and <b>name attribute</b> in form</p>
+    <div id="first_containor">
+        <h1>Direct Search</h1>
+            <p>Search with <b><i>Action</i></b> and <b><i>Name attribute</i></b> in form</p>
+            <img src="asset/logo.png" alt="" id="main_logo">
+    </div>
     <br>
     <form action="https://www.google.com/search"> <!-- Google search url-->
         <div>
             <label for="search">
-                Google Search :
+                <span>
+                    <img src="asset/google logo.png" alt=""> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <h1>Google Search</h1> 
+                </span>
+                <br><br>
                         <input type="text" placeholder="Type here someting" id="search" name="q"> <!--q is address where data is stored-->
                 <button type="submit">Search</button>
             </label>
@@ -22,7 +30,11 @@
     <form action="https://www.youtube.com/results"> <!-- Search form from Youtube-->
         <div>
             <label for="y_tube">
-                Youtube Search :
+                <span>
+                    <img src="asset/youtube logo.png" alt="">
+                    <h1>Youtube Search</h1>
+                </span> 
+                <br><br>
                     <input type="text" placeholder="Search from Youtube" name="search_query" id="y_tube"> <!--name = search_query this is the name of database where our interst is save-->
                 <button type="submit">Search</button>
             </label>
